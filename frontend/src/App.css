@@ -1,0 +1,18 @@
+/* styles.css or your global CSS file */
+.main-container {
+  display: flex; /* You can keep flex here if needed */
+  flex-direction: column; /* Set the direction to column for stacking */
+  padding: 40px; /* Padding for the container */
+}
+
+.how-it-works-container {
+  padding: 40px; /* Padding for the How It Works section */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .main-container,
+  .how-it-works-container {
+    padding: 20px; /* Less padding for mobile */
+  }
+}

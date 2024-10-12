@@ -1,0 +1,72 @@
+/* Modal Container Styles */
+.modal-content {
+    background: white;
+    padding: 50px; /* Increased padding for better spacing */
+    border-radius: 12px; /* Slightly rounder corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    width: 400px; /* Fixed width for better alignment */
+    position: relative;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem; /* Larger font size for better visibility */
+    margin-bottom: 10px; /* Space below heading */
+    text-align: center; /* Center align the headings */
+}
+
+h3 {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    margin-bottom: 20px; /* Space below subheading */
+    text-align: center; /* Center align the subheading */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Adequate padding for input fields */
+    font-size: 1rem; /* Consistent font size */
+    border-radius: 6px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 15px; /* Space between fields */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for focus effect */
+}
+
+/* Focus effect for input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #035964; 
+    box-shadow: 0 0 8px #05b5cc; /* Soft green shadow on focus */
+}
+
+/* Button styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #035964;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #05b5cc; 
+}
+
+.footer{
+    text-align: center;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Make modal responsive */
+    }
+}

@@ -1,0 +1,91 @@
+/* TemplatePreview.css */
+
+.template-slider-container {
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Maximum width for better aesthetics */
+  background: white; /* White background for contrast */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  position: relative; /* Position for slider arrows */
+  padding: 20px; /* Padding around the content */
+  margin: 20px auto; /* Center container and add margin */
+}
+
+/* Slider styles */
+.slider {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the slides */
+  align-items: center; /* Align items vertically */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Relative position for absolute children */
+}
+
+/* Slide styles */
+.slide {
+  display: none; /* Hide all slides by default */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+.slide.active {
+  display: flex; /* Show active slide */
+}
+
+/* Image styles */
+.slider img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); /* Light shadow for images */
+}
+
+/* Title styles */
+.slider p {
+  font-size: 1.2rem; /* Font size for the template title */
+  font-weight: bold; /* Bold title */
+  margin-top: 10px; /* Space between image and title */
+}
+
+/* Slider arrow styles */
+.slider-arrow {
+  position: absolute; /* Position arrows absolutely */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center adjustment */
+  background-color: #035964; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 50%; /* Circular buttons */
+  padding: 12px; /* Padding for size */
+  cursor: pointer; /* Pointer cursor for buttons */
+  z-index: 1; /* Ensure arrows are above the slider */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.left-arrow {
+  left: 10px; /* Position left arrow */
+}
+
+.right-arrow {
+  right: 10px; /* Position right arrow */
+}
+
+.slider-arrow:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .template-slider-container {
+    padding: 10px; /* Reduce padding for mobile */
+  }
+
+  .slider img {
+    max-width: 90%; /* Adjust image size for mobile */
+  }
+
+  .slider-arrow {
+    padding: 10px; /* Reduce arrow size */
+  }
+}

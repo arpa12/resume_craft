@@ -1,0 +1,57 @@
+/* How It Works Section Styles */
+/* HowItWorks.css */
+.how-it-works {
+  width: 100%; /* Full width */
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 20px 0; /* Margin for spacing */
+}
+
+  
+  
+  .how-it-works h2 {
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #035964; /* Color that matches the theme */
+  }
+  
+  .steps {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Evenly space items */
+    flex-wrap: wrap; /* Wrap items to next line on small screens */
+  }
+  
+  .step {
+    flex: 1; /* Allow equal spacing */
+    max-width: 300px; /* Max width for each step */
+    text-align: center; /* Center text */
+    margin: 20px; /* Spacing between steps */
+    padding: 20px; /* Padding inside each step */
+    background-color: #ffffff; /* White background for steps */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s; /* Transition for hover effect */
+  }
+  
+  .step:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  .step h3 {
+    font-size: 1.5rem; /* Size for step titles */
+    margin-top: 15px; /* Space above title */
+    color: #333; /* Dark color for text */
+  }
+  
+  .step p {
+    font-size: 1rem; /* Size for description text */
+    color: #666; /* Gray color for description */
+  }
+  
+  .step-icon {
+    color: #035964; /* Green color for icons */
+  }
+  
